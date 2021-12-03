@@ -1,0 +1,64 @@
+1) Посмотреть где я :  pwd
+
+2) Создать папку :  mkdir folder_name
+
+3) Зайти в папку:  cd folder_name
+
+4) Cоздать 3 папки:  mkdir folder_1 folder_2 folder_3
+
+5) Зайти в любую папку:  cd folder_1
+
+6) Создать 5 файлов:  (3 txt, 2 json) : touch folder_name1.txt folder_name2.txt folder_name3.txt folder_name4.json folder_name5.json
+
+7) Создать 3 папки: mkdir folder_name_1 folder_name_2 folder_name_3 
+
+8) Вывести список содержимого папки: ls "выведет содержимое папки" OR ls -a "выведет в строку содержимое + скрытые файлы" OR ls -la выведет в строку содержимое + скрытые файлы по столбцам
+
+9) Открыть любой txt файл :  cat file_name  OR  tac "выполнит тоже что и  cat  только выведет всё с конца списка"
+
+10) Написать туда что-нибудь, любой текст:  nano file_name.txt
+
+11) Сохранить и выйти:  сохранить изменения нажать "F3" , выйти из редактора нажать "F2"
+
+12) Выйти из папки на уровень выше:  cd ..
+
+13) Переместить любые 2 файла,в любую другую папку:   mv file1.txt file2.json folder_name
+
+14) Скопировать любые 2 файла,в любую другую папку:   cp file1.txt file2.json folder_name
+
+15) Найти файл по имени :  find  name_file
+
+16) Команда  less +f "открывает файлы журнала, в которые записываются изменения, отображаемые в реальном времени". "OR"  tail -f будет постоянно показывать новые строки, добавленные в файл.
+	
+17) Вывести несколько первых строк файла: head -n 2 file_name
+
+18) Вывести несколько последних строк файла: tail -n 2 file_name
+
+19) Просмотреть содержимое длинного файла (команда less) изучите как она работает  less -s file_name
+
+20) Вывести дату и время : date + "%D %T"
+
+
+1*) Отправить http запрос:  curl http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000
+
+2*) nano Script_bash.sh "в открывшемся редакторе nano вводим":
+
+	#!/bin/bash
+
+   	mkdir Myscriptfolder
+
+   	cd Myscriptfolder
+
+   	mkdir test1 test2 test3
+
+   	cd test1
+
+   	touch file1.txt file2.txt file3.txt file4.json file5.json
+
+   	mkdir test4 test5 test6
+
+   	ls -la
+
+   	cp file1.txt file2.txt D:/My-progect/Myscript/Myscriptfolder/test1/test6
+	
+    В терминале вводим bash Script_bash.sh
